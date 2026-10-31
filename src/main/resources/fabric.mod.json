@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "customhealthhud",
+  "version": "${version}",
+  "name": "Custom Health HUD",
+  "description": "This is a mod. :)",
+  "authors": ["POH"],
+  "license": "All Rights Reserved",
+  "icon": "assets/customhealthhud/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["net.poh.customhealthhud.CustomHealthHudMod"],
+    "client": ["net.poh.customhealthhud.client.CustomHealthHudClient"]
+  },
+  "mixins": [
+    { "config": "customhealthhud.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "minecraft": "1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}
